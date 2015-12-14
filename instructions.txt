@@ -1,0 +1,12 @@
+RAPPORT DE 2 PAGES (MAX) à RENDRE LE 18 DECEMBRE:
+Simplement préciser le type de données qu'on utilise, de quelle base de données elles proviennent, mentionner l'article scientifique qui y est lié. Parler des objectifs de notre analyse. 
+
+
+
+EXAMEN:
+On devra faire une présentation powerpoint, parler pendant 10-15 minutes (durée sera précisée par mail)
+
+il faut:
+- parler des objectifs, de nos hypothèses, du contexte général, et de nos résultats.
+- Bien choisir les méthodes d'analyse qu'on utilise. Elles doivent etre appropriées à nos données et a nos objectifs.
+- Au minimum, on doit faire: une cluster analysis, et au choix: MFA, RDA, randomforest...

@@ -1,0 +1,36 @@
+*************
+INTRO:
+*************
+- Comme nous souhaitons effectuer notre analyse sur une variété raisonnable de données, nous ne considérerons que les années 2010 et 2011 (3 intensités de paturage contre seulement 2 pour les autres années).
+
+- Les valeurs des variables environnementales ne sont pas les memes pour ces 2 années. Ainsi, dans un premier temps, nous considérons qu'il y a autant d'objets que de paddock, *2. C'est comme si le paddock A1 en 2010 n'était pas le meme que le paddock A1 en 2011.
+
+- En raison des méthodes de comptage différentes entre les sauterelles et les papillons, nous standardiserons les descripteurs par une transformation en valeurs relatives. Ce type de transformation permet de s'intéresser à l'influence de l'intensité de pâturage sur la présence des espèces, sans craindre de biais dû à la méthode de comptage.
+
+
+*************
+PREPARATION DES DONNEES:
+*************
+
+-------------
+Objets
+-------------
+Les objets sont le paddocks avec l'année correspondante:
+
+
+A1_2010	A2_2010	A3_2010	B1_2010	B2_2010	B3_2010	C1_2010	C2_2010	C3_2010	A1_2011	A2_2011	A3_2011	B1_2011	B2_2011	B3_2011	C1_2011	C2_2011	C3_2011
+
+-------------
+Matrice espèce
+-------------
+Dans chaque paddock (A1, B3, C2...) pour une année donnée, 3 comptages sont effectués. Cependant, seule une mesure des variables environnementales est donnée pour chaque paddock. Ainsi, on moyennera les comptages par paddock et par année. Par exemple, pour l'espèce C_a, on fera la somme des comptages sur le paddock A1 en 2010 et on la divisera par 3 (car il y a 3 transects).
+
+Les descripteurs sont les noms des espèces, qui sont abrégés selon la logique présentée dans le fichier "correspondance_noms_abbréviations.xlxs", dans le dossier "creation_matrice_espece"
+
+
+
+---------------------
+Matrice environnement
+---------------------
+Par rapport aux données de base, on ajoute un descripteur: l'année. Cela permettra de voir si l'année à laquelle les mesures sont prises a une influence sur les resultats...
+Bien sur, il faut aussi ajouter la colonne des objets présentée plus haut dans ce document.
